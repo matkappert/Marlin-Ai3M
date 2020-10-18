@@ -47,10 +47,12 @@
 #define X_STEP_PIN         54
 #define X_DIR_PIN          55
 #define X_ENABLE_PIN       38
+#define X_CS_PIN 		   29
 
 #define Y_STEP_PIN         60
 #define Y_DIR_PIN          61
 #define Y_ENABLE_PIN       56
+#define Y_CS_PIN 		   25
 
 #define Y2_STEP_PIN        36
 #define Y2_DIR_PIN         34
@@ -59,14 +61,17 @@
 #define Z_STEP_PIN         46
 #define Z_DIR_PIN          48
 #define Z_ENABLE_PIN       62
+#define Z_CS_PIN 		   16
 
 #define Z2_STEP_PIN        36
 #define Z2_DIR_PIN         34
 #define Z2_ENABLE_PIN      30
+#define Z2_CS_PIN 		   37
 
 #define E0_STEP_PIN        26
 #define E0_DIR_PIN         28
 #define E0_ENABLE_PIN      24
+#define E0_CS_PIN 		   35
 
 // EndStops
 #define X_MIN_PIN           3
