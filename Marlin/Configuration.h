@@ -380,9 +380,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // i3 Mega stock v5 hotend, 40W heater cartridge (3.6Ω @ 22°C)
-  #define  DEFAULT_Kp 22.43
-  #define  DEFAULT_Ki 2.23
-  #define  DEFAULT_Kd 56.50
+  #define  DEFAULT_Kp 17.42
+  #define  DEFAULT_Ki 1.23
+  #define  DEFAULT_Kd 61.71s
 
   // Ultimaker
   //#define  DEFAULT_Kp 22.2
@@ -614,7 +614,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 446.51 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 384 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -629,7 +629,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 3000, 2000,  60, 10000 }
+#define DEFAULT_MAX_ACCELERATION      { 3000, 2000,  60, 1500 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
