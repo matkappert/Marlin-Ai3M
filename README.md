@@ -369,3 +369,80 @@ Marlin is published under the [GPLv3 license](https://github.com/MarlinFirmware/
 * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 ```
+
+
+
+
+
+# USER NOTES
+
+```
+Recv: echo:  G21    ; (mm)
+Recv: 
+Recv: echo:Filament settings: Disabled
+Recv: echo:  M200 D1.75
+Recv: echo:  M200 D0
+Recv: echo:Steps per unit:
+Recv: echo:  M92 X80.00 Y80.00 Z400.00 E384.00
+Recv: echo:Maximum feedrates (units/s):
+Recv: echo:  M203 X500.00 Y500.00 Z6.00 E30.00
+Recv: echo:Maximum Acceleration (units/s2):
+Recv: echo:  M201 X3000 Y2000 Z60 E10000
+Recv: echo:Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+Recv: echo:  M204 P1500.00 R1500.00 T3000.00
+Recv: echo:Advanced: Q<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> X<max_x_jerk> Y<max_y_jerk> Z<max_z_jerk> E<max_e_jerk>
+Recv: echo:  M205 Q20000 S0.00 T0.00 X10.00 Y10.00 Z0.40 E5.00
+Recv: echo:Home offset:
+Recv: echo:  M206 X0.00 Y0.00 Z0.00
+Recv: echo:Mesh Bed Leveling:
+Recv: echo:  M420 S0 Z0.00
+Recv: echo:  G29 S3 X1 Y1 Z2.24000
+Recv: echo:  G29 S3 X2 Y1 Z2.36000
+Recv: echo:  G29 S3 X3 Y1 Z2.42000
+Recv: echo:  G29 S3 X4 Y1 Z2.44000
+Recv: echo:  G29 S3 X5 Y1 Z2.36000
+Recv: echo:  G29 S3 X1 Y2 Z2.26000
+Recv: echo:  G29 S3 X2 Y2 Z2.38000
+Recv: echo:  G29 S3 X3 Y2 Z2.42000
+Recv: echo:  G29 S3 X4 Y2 Z2.44000
+Recv: echo:  G29 S3 X5 Y2 Z2.40000
+Recv: echo:  G29 S3 X1 Y3 Z2.26000
+Recv: echo:  G29 S3 X2 Y3 Z2.38000
+Recv: echo:  G29 S3 X3 Y3 Z2.40000
+Recv: echo:  G29 S3 X4 Y3 Z2.50000
+Recv: echo:  G29 S3 X5 Y3 Z2.40000
+Recv: echo:  G29 S3 X1 Y4 Z2.22000
+Recv: echo:  G29 S3 X2 Y4 Z2.36000
+Recv: echo:  G29 S3 X3 Y4 Z2.38000
+Recv: echo:  G29 S3 X4 Y4 Z2.42000
+Recv: echo:  G29 S3 X5 Y4 Z2.34000
+Recv: echo:  G29 S3 X1 Y5 Z2.20000
+Recv: echo:  G29 S3 X2 Y5 Z2.34000
+Recv: echo:  G29 S3 X3 Y5 Z2.34000
+Recv: echo:  G29 S3 X4 Y5 Z2.38000
+Recv: echo:  G29 S3 X5 Y5 Z2.32000
+Recv: echo:Endstop adjustment:
+Recv: echo:  M666 Z0.00
+Recv: echo:PID settings:
+Recv: echo:  M301 P17.42 I1.23 D61.71
+Recv: echo:  M304 P197.06 I37.58 D258.29
+Recv: echo:Stepper driver current:
+Recv: echo:  M906 X800 Y800 Z800
+Recv:   M906 I1 Z800
+Recv:   M906 T0 E800
+Recv: 
+Recv: echo:Linear Advance:
+Recv: echo:  M900 K0.00
+Recv: echo:Filament load/unload lengths:
+Recv: echo:  M603 L538.00 U555.00
+Recv: ok
+```
+
+```
+M503 ;read settings
+M203 X120.00 Y120.00 Z10.00 E30.00
+M201 X200 Y200 Z60 E1500
+M204 P1500.00 R1500.00 T3000.00
+M500 ;save
+```
+
